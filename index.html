@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- IMPORT FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- ALERTIFY JS -->
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css" />
+</head>
+
+<body>
+    <div class="all-content ">
+        <div class="main-content" id="main-content">
+            <!-- HEADER -->
+            <div class="header" id="header">
+                X Turn
+            </div>
+            <!-- // HEADER // -->
+            <!-- BODY -->
+            <div class="content" id="content">
+                
+                <div class="squars" id="squars">
+                    <!-- ROW 1 -->
+                    <div class="square" id="square-0-0"
+                        style="border-top:none; border-left: none" onclick="play(0, 0)">
+                    </div>
+                    <div class="square" id="square-0-1" style="border-top: none;" onclick="play(0, 1)"></div>
+                    <div class="square" id="square-0-2" style="border-top: none; border-right: none;"
+                        onclick="play(0, 2)">
+                    </div>
+                    <!-- ROW 2 -->
+                    <div class="square " id="square-1-0" style="border-left: none;" onclick="play(1, 0)"></div>
+                    <div class="square" id="square-1-1" onclick="play(1, 1)"></div>
+                    <div class="square" id="square-1-2" style="border-right: none;" onclick="play(1, 2)"></div>
+                    <!-- ROW 3 -->
+                    <div class="square" id="square-2-0" style="border-left: none;border-bottom: none"
+                        onclick="play(2, 0)">
+                    </div>
+                    <div class="square" id="square-2-1" style="border-bottom: none;" onclick="play(2, 1)"></div>
+                    <div class="square" id="square-2-2" style="border-right: none; border-bottom: none;"
+                        onclick="play(2, 2)">
+                    </div>
+                </div>
+            </div>
+            <!-- // BODY // -->
+            <!-- FOOTER -->
+            <div class="footer" id="footer" onclick="reset()">
+                Reset
+            </div>
+            <div class="footer computer-player" id="computer-player" onclick="enableComputerPlayer()">
+                Enable Computer Player
+            </div>
+            <div class="footer" id="footer" onclick="showResults()">
+                Show Results
+            </div>
+            <!-- // FOOTER -->
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
